@@ -1,0 +1,11 @@
+
+写一个note taking app
+
+只需要支持两种请求
+一个是
+GET localhost:3000 -> 返回所有的notes
+POST localost:3000 -> 添加一个新的note
+
+note的格式 就是字符串 "xxxxxx"
+note需要存到本地notes.json文件
+

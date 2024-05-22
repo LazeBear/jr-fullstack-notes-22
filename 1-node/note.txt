@@ -1,1 +1,55 @@
-hello
+https://github.com/LazeBear/jr-fullstack-notes-22
+
+
+Mason
+
+Bun - another JS runtime
+
+
+
+
+Asynchronous 异步 | non-blocking 非阻塞
+Synchronous 同步 | blocking 阻塞
+
+thread
+
+js is single thread
+
+event-driven
+
+// event loop
+
+
+queue
+FIFO (first in first out)
+
+
+
+function foo() {
+  console.log('foo'); [1004ms]
+}
+
+function runFor1Sec() {
+  // this function will require 1s to execute
+}
+[1ms]
+setTimeout(foo, 100); [2ms]
+runFor1Sec(); [2ms - 1002ms]
+console.log('hello'); [1003ms]
+
+
+Call stack
+
+web api
+
+callback queue - macro task queue
+promise queue  - micro task queue
+
+// nextTick
+// setImmediate
+
+Execution context
+Scope
+
+
+
