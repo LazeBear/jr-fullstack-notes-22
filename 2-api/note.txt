@@ -1,0 +1,98 @@
+TCP
+
+1,2,3 -> 1,2,3
+
+1,3,2
+1,3
+
+UDP (User datagram protocol)
+
+TCP/IP
+
+
+HTTP 5 versions
+
+0.9
+1.0
+1.1
+2
+3
+
+https
+s secure - transport layer security (OSI model)
+
+DNS
+
+
+https://www.google.com/search?q=google+search&rlz=1C5CHFA_enAU1031AU1031&oq=google+search&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMgcIAhAAGI8CMgcIAxAAGI8CMgYIBBBFGEEyBggFEEUYQTIGCAYQRRhB0gEIMTU2NmowajGoAgCwAgE&sourceid=chrome&ie=UTF-8
+
+
+domain -> google.com
+hostname -> www.google.com
+host -> www.google.com:443
+origin -> https://www.google.com:443
+
+IP whitelist
+
+
+
+Create Read Update Delete
+POST   GET  PUT    DELETE
+            PATCH
+
+
+OPEN api
+
+
+OAuth
+
+serialization and de-serialization
+
+
+XML
+
+
+Restful API 设计规范
+
+1. versioning 版本
+example.com/v1
+example.com/api/v1
+v1.example.com/api
+api.example.com/v1
+
+2. 用名词来描述资源，同时使用复数形式
+/api/v1/users
+/api/v1/notes
+
+3. 使用恰当的http method来描述操作
+获取数据 -> GET
+添加 -> POST
+
+4. 在url上，可以选择使用嵌套形式来定位资源
+/api/v1/users/{userId}/notes
+/api/v1/users/:userId/notes
+
+/api/v1/notes
+
+5. 使用对应的http status code来表示请求的结果
+
+6. 注意返回的数据的大小，尽量进行分页操作
+GET /api/v1/users?page=1&pageSize=10
+GET /api/v1/users?page=2&pageSize=10
+
+7. 返回可读的错误信息
+400
+body:
+Bad request
+
+400
+body:
+{error: "invalid username"}
+
+
+时序图
+sequence diagram
+
+flow diagram
+
+ERD entity relationship diagram
