@@ -1,0 +1,13 @@
+yarn
+pnpm
+
+
+cli
+command line interface
+脚手架工具
+
+
+npm run {script}
+
+test - npm run test - npm test
+start - npm run start - npm start
