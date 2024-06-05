@@ -1,0 +1,40 @@
+/--- ROOT level ---/
+-- package.json
+-- package-lock.json
+-- src/
+  |-- index.js 入口文件 (app.js, server.js)
+  |-- routes/
+    |-- user(s).js (users.router.js)
+    |-- tasks.js
+    |-- otherResources.js
+  |-- controllers/
+    |-- user.js (user.controller.js)
+    |-- task.js
+  |-- models/ ORM DB-CRUD
+    |-- user.js (User.js) (user.model.js)
+    |-- task.js
+  |-- middleware/
+    |-- cors.js
+    |-- parseId.js
+  |-- utils/ (common/)
+    |-- db connection
+    |-- utility/helper methods (logger, swagger)
+
+
+小: routes 和 controller 合并
+大：从controller里拆分出新的一层 service
+business logic
+
+
+-- src/
+  |-- users/
+    |-- user.router.js
+    |-- user.model.js
+    |-- user.controller.js
+    |-- ...
+
+
+
+
+layer
+router 路由
