@@ -1,0 +1,81 @@
+
+SQL
+MySQL
+PostgreSQL
+SQLite
+
+no-SQL
+document-oriented -> mongodb
+key-value -> redis
+graph-oriented -> neo4j
+column-family -> cassandra
+
+BSON -> Binary JSON
+
+operator
+
+projection
+
+
+students
+[
+  {
+    _id:1,
+    name:"xx",
+    addresses: [
+      {
+        _id: 'a1',
+        postcode: 4000
+      },
+      {
+        _id: 'a2',
+        postcode: 3000
+      },
+    ]
+  },
+  {
+    _id:2,
+    name:"yy",
+    addresses: [
+      {
+        _id: 'a1',
+        postcode: 4000
+      },
+      {
+         _id: 'a2',
+        postcode: 3000
+      },
+    ]
+  }
+]
+
+addresses
+[
+  {
+    _id: 'a1',
+    city: "brisbane",
+    postcode: 4000
+  },
+  {
+    _id: 'a2',
+    city: "sydney",
+    postcode: 3000
+  },
+]
+
+
+denormalisation
+
+
+
+document limit 16mb
+
+16kb
+
+
+aggregation pipeline
+[10000] -> [1000] -> [1]
+
+
+replica set
+
