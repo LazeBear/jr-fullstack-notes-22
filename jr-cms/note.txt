@@ -1,0 +1,23 @@
+CMS (content management system)
+
+
+users
+students
+courses
+
+teachers
+
+entity
+Entity Relational Diagram (ERD)
+
+Hackolade
+moon modeler
+lucid chart
+draw.io
+
+
+
+mongodb + elastic search + kibana
+
+datadog
+sentry

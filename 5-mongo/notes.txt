@@ -79,3 +79,7 @@ aggregation pipeline
 
 replica set
 
+
+sequelize
+prisma
+
