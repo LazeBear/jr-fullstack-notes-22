@@ -10,6 +10,7 @@ const unknownErrorMiddleware = require('./middleware/error/unknownError.middlewa
 const v1Router = require('./routes');
 const connectToDB = require('./utils/db');
 const pathNotFoundMiddleware = require('./middleware/pathNotFound.middleware');
+const validationErrorMiddleware = require('./middleware/error/validationError.middleware');
 const logger = createLogger(__filename);
 
 const app = express();
@@ -24,6 +25,7 @@ app.use('/v1', v1Router);
 
 app.use(pathNotFoundMiddleware);
 
+app.use(validationErrorMiddleware);
 app.use(unknownErrorMiddleware);
 
 connectToDB().then(() => {
