@@ -21,3 +21,55 @@ mongodb + elastic search + kibana
 
 datadog
 sentry
+
+
+哈希 hash
+加密和解密 encrypt, decrypt
+
+x -> X encrypt
+X -> x decrypt
+
+x -> x' hash
+x' !-> x 不可逆转
+
+hash + salt 加盐
+
+hash(x + random_salt) -> x'
+hash(x + random_salt) -> x''
+
+x+random_salt =? x + random_salt
+
+random_salt + x' -> save to DB
+
+// bcrypt
+
+
+
+JSON web token (JWT token)
+session + cookie
+
+SSR (server side rendering)
+CSR
+CSRF
+
+v1.example.com
+v2.example.com
+example.com
+
+
+mitigate
+
+
+Role based access control - RBAC
+Attribute based access control - ABAC
+
+user, admin
+
+
+Single sign on
+Oauth token
+
+user
+sso_user
+
+passport.js

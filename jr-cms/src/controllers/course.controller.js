@@ -108,6 +108,7 @@ const updateCourseById = async (req, res, next) => {
     const course = await CourseModel.findByIdAndUpdate(
       id,
       { name, description },
+      // $set, $unset
       { new: true }
     ).exec();
     if (!course) {

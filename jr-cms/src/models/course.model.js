@@ -15,7 +15,8 @@ const schema = new Schema({
     type: String,
     required: true,
     // unique: true,
-  },
+    // sparse: true,
+  }, // null
   description: {
     type: String,
     default: 'This is a description example',
